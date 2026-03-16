@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse upcoming and past Coding Society events." />
+  <title>Events | Coding Society</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo" aria-label="Coding Society home">
+        <span aria-hidden="true">&#60;/&#62;</span> Coding<span>Society</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html" aria-current="page">Events</a></li>
+        <li><a href="contact.html">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="events-page-heading">
+      <h1 id="events-page-heading">Events</h1>
+      <p>Stay up to date with workshops, hackathons, and meetups.</p>
+    </section>
+
+    <section class="section" aria-labelledby="events-list-heading">
+      <div class="container">
+        <h2 class="section-title visually-hidden" id="events-list-heading">Event Listings</h2>
+
+        <!-- Tabs -->
+        <div class="tabs">
+          <ul class="tab-list" role="tablist" aria-label="Event categories">
+            <li role="presentation">
+              <button class="tab-btn" id="tab-upcoming" role="tab"
+                aria-selected="true" aria-controls="panel-upcoming">
+                Upcoming Events
+              </button>
+            </li>
+            <li role="presentation">
+              <button class="tab-btn" id="tab-past" role="tab"
+                aria-selected="false" aria-controls="panel-past">
+                Past Events
+              </button>
+            </li>
+          </ul>
+
+          <!-- Upcoming panel -->
+          <div id="panel-upcoming" role="tabpanel" aria-labelledby="tab-upcoming" class="tab-panel active">
+            <div class="event-list">
+
+              <article class="event-card">
+                <div class="event-date" aria-label="15 July">
+                  <div class="day">15</div><div class="mon">Jul</div>
+                </div>
+                <div class="event-info">
+                  <h3>Web Dev Workshop</h3>
+                  <p>Hands-on session covering HTML, CSS, and JavaScript fundamentals for beginners.</p>
+                  <p>📍 Lab 3, Block B</p>
+                  <span class="event-tag">Workshop</span>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-date" aria-label="22 July">
+                  <div class="day">22</div><div class="mon">Jul</div>
+                </div>
+                <div class="event-info">
+                  <h3>Intro to AI &amp; ML</h3>
+                  <p>Explore machine learning concepts and build your first model with Python and scikit-learn.</p>
+                  <p>📍 Seminar Room 1</p>
+                  <span class="event-tag">Talk</span>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-date" aria-label="2 August">
+                  <div class="day">02</div><div class="mon">Aug</div>
+                </div>
+                <div class="event-info">
+                  <h3>Campus Hackathon 2025</h3>
+                  <p>48-hour hackathon open to all students. Form a team and build something amazing.</p>
+                  <p>📍 Innovation Hub</p>
+                  <span class="event-tag">Hackathon</span>
+                </div>
+              </article>
+
+            </div>
+          </div><!-- /panel-upcoming -->
+
+          <!-- Past panel -->
+          <div id="panel-past" role="tabpanel" aria-labelledby="tab-past" class="tab-panel">
+            <div class="event-list">
+
+              <article class="event-card">
+                <div class="event-date" aria-label="10 March">
+                  <div class="day">10</div><div class="mon">Mar</div>
+                </div>
+                <div class="event-info">
+                  <h3>Git &amp; GitHub Bootcamp</h3>
+                  <p>Version control essentials: branching, pull requests, and collaborative workflows.</p>
+                  <p>📍 Computer Lab 2</p>
+                  <span class="event-tag">Workshop</span>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-date" aria-label="5 May">
+                  <div class="day">05</div><div class="mon">May</div>
+                </div>
+                <div class="event-info">
+                  <h3>Cybersecurity CTF Challenge</h3>
+                  <p>Capture-the-flag competition testing ethical hacking and problem-solving skills.</p>
+                  <p>📍 Online (Discord)</p>
+                  <span class="event-tag">Competition</span>
+                </div>
+              </article>
+
+            </div>
+          </div><!-- /panel-past -->
+
+        </div><!-- /tabs -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h2>Coding Society</h2>
+        <p>Empowering campus developers since 2022.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Join Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-links">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:codingsociety@campus.edu">codingsociety@campus.edu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Coding Society. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
